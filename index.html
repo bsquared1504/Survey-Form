@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Movie Application Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section id="introduction" class="center">
+      <h1 id="title">Bradman Studios Application</h1>
+      <p id="description">If you are reading this, you are about to fill out an application to be in an upcoming Bradman Studios project.</p>
+        <p>You will answer a short series of questions, and our team will get back to you shortly for auditions.<p>
+    </section>
+    <section id="questions">
+      <form id="survey-form">
+        <fieldset id="personal">
+          <legend>Personal Information</legend>
+          <label id="name-label" for="name">Name: <input type="text" id="name" placeholder="Joe Citizen" required /></label>
+          <label id="email-label" for="email">Email: <input type="email" id="email" placeholder="joe.citizen@gmail.com"required /></label>
+          <label id="number-label" for="age">Age: <input min="18" max="85" type="number" id="number" placeholder="25" required /></label>
+          <label id="social-label"  for="social">SSN: <input pattern="[0-9]{9,}" type="text" id="social" placeholder="000000000" required></label>
+        </fieldset>
+        <fieldset id="quick">
+          <legend>Quick Questions</legend>
+          <label id="referrer-label" for="dropdown">How did you hear about this opportunity?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Advertisement</option>
+              <option value="2">Friends or Family</option>
+              <option value="3">Agent</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <p id="xp-label">Have you worked in the movie industry before?</p>
+          <label for="xp-yes"><input type="radio" id="xp-yes" value="xp-yes" name="xp">Yes</label>
+          <label for="xp-no"><input type="radio" id="xp-no" value="xp-no" name="xp" checked>No</label>
+          <label id="xp-explain-label" for="id-explain">If yes, what projects?<textarea id="xp-explain" rows="6" cols="35" placeholder="The City and I, Joe Bro Go..."></textarea>
+          <p id="relative-label">Do you have a relative or close friend who works in Bradman Studios?</p>
+          <label for="relative-yes"><input type="radio" id="relative-yes" value="relative-yes" name="relative">Yes</label>
+          <label for="relative-no"><input type="radio" id="relative-no" value="relative-no" name="relative" checked>No</label>
+          <p>Which of the movies have you seen? (select all that apply)<p>
+            <label id="Episode-I-check"><input type="checkbox" value="Episode-I">Episode I</label>
+            <label id="Episode-II-check"><input type="checkbox" value="Episode-II">Episode II</label>
+            <label id="Episode-III-check"><input type="checkbox" value="Episode-III">Episode III</label>
+            <label id="Episode-IV-check"><input type="checkbox" value="Episode-IV">Episode IV</label>
+            <label id="Episode-V-check"><input type="checkbox" value="Episode-V">Episode V</label>
+            <label id="Episode-VI-check"><input type="checkbox" value="Episode-VI">Episode VI</label>
+            <label id="Episode-VII-check"><input type="checkbox" value="Episode-VII">Episode VII</label>
+            <label id="Episode-VIII-check"><input type="checkbox" value="Episode-VIII">Episode VIII</label>
+            <label id="Episode-IX-check"><input type="checkbox" value="Episode-IX">Episode IX</label>
+            <label id="Episode-Rogue-check"><input type="checkbox" value="Rogue-One">Rogue One</label>
+            <label id="Episode-Solo-check"><input type="checkbox" value="Solo">Solo</label>
+        </fieldset>
+        <fieldset id="interview">
+          <legend>Interview Questions</legend>
+          <label id="good-quality-label" for="good-quality">What would you say is your best quality and why?<textarea id="good-quality" rows="6" cols="35" placeholder="Inginuity, because..."></textarea>
+          <label id="bad-quality-label" for="bad-quality">What would you say is your worst quality, and how does it affect your day-to-day life?<textarea id="bad-quality" rows="6" cols="35" placeholder="Procrastination affects me..."></textarea>
+          <label id="fear-label" for="fear">What is your greatest fear and why?<textarea id="fear" rows="6" cols="35" placeholder="Clowns, because"></textarea>
+          <label id="money-label" for="money">What would you do with $1 million?<textarea id="money" rows="6" cols="35" placeholder="I would buy 3 hamsters..."></textarea>
+          <label id="comments-label" for="comments">Additional Comments:<textarea id="comments" rows="6" cols="35" placeholder="I'm a pretty cool guy..."></textarea>
+          </fieldset>
+          <input type="submit" value="Submit" id="submit"/>
+      </form>
+    </section>
+  </body>
+</html>
