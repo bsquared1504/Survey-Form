@@ -1,0 +1,55 @@
+body{
+  width: 100%;
+  background-color: #36151B;
+  font-family: Century School;
+  color: #AD9196;
+  margin: 0;
+}
+h1{
+  text-align: center;
+  color: #AD9196;
+  padding-top: 20px;
+}
+
+.center{
+  text-align: center;
+}
+
+textarea, input, select{
+  background-color: #491D26;
+}
+
+label{
+  display: block;
+}
+
+textarea{
+  display: block;
+  margin: 5px 0 2em;
+}
+
+input[type="submit"]{
+  width: 20%;
+  margin: 5px auto;
+  display: block;
+  color: #AD9196
+}
+
+p{
+  margin: 5px 0;
+}
+
+input[checked]{
+  margin-bottom: 20px;
+}
+
+select{
+  color: #717575;
+}
+
+form{
+  margin: 0 auto;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+}
